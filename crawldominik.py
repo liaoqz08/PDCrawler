@@ -20,7 +20,7 @@ oldfilenum=0
 ziplist=[]
 inilist=[]
 
-with open ("/Users/domonikboddin/Documents/Crawling/Current/zip.txt", encoding="utf16") as rfile:
+with open ("/Users/verapro/Documents/Crawling/Current/zip.txt", encoding="utf16") as rfile:
     for line in rfile:
         
 
@@ -34,7 +34,7 @@ initial=1
 
 if oldfilenum>0:
     for n in range(1,oldfilenum+1):
-        with open("/Users/dominikboddin/Documents/Crawling/Current/output_"+str(startyear)+"_"+str(oldfilenum)+".txt", encoding="utf16") as inifile:
+        with open("/Users/verapro/Documents/Crawling/Current/output_"+str(startyear)+"_"+str(oldfilenum)+".txt", encoding="utf16") as inifile:
             i=0
             for line in inifile:
                 i+=1
@@ -53,7 +53,7 @@ if oldfilenum>0:
 driver =webdriver.Firefox()
 #driver =webdriver.PhantomJS("/Library/Python/2.7/site-packages/phantomjs-2.0.0-macosx/bin/phantomjs")
 for year in range (startyear,endyear+1):
-    url="/Users/dominikboddin/Documents/Crawling/Current/output_"+str(year)+".txt"
+    url="/Users/verapro/Documents/Crawling/Current/output_"+str(year)+".txt"
     with open (url,"w",encoding="utf16") as wfile:
         
         wfile.write("zip")
