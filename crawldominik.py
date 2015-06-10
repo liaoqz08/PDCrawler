@@ -386,13 +386,13 @@ for year in range (startyear,endyear+1):
                                     rightposes=[m.start() for m in re.finditer('\)',anmeld)]
                                     num=len(leftposes)
                                     if num>0:
-                                        print(anmeld)
+                                        
 
                                         for j in range(0,num):
                                             if ";" in anmeld[leftposes[j]:rightposes[j]]:
                                                 anmeldcopy=anmeld
                                                 anmeld=anmeldcopy[0:leftposes[j]].strip()+anmeldcopy[rightposes[j]+1:].strip()
-                                        print(anmeld)
+                                       
 
 
 
